@@ -1,0 +1,11 @@
+MODEL:
+  NAME: 'transformer'
+  TRANSFORMER_TYPE: 'swin_small_patch4_window7_224'
+  JPM: False
+  SEMANTIC_WEIGHT: 0.2
+  NECK: 'bnneck'
+INPUT:
+  SIZE_TRAIN: [384, 128]
+  SIZE_TEST: [384, 128]
+TEST:
+  NECK_FEAT: 'after'
